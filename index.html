@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TimePact – Beat Distraction, On Purpose</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="TimePact is a focused productivity companion that limits you to your most important apps while tracking your progress."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="top-bar">
+        <div class="brand">
+          <div class="brand-mark">TP</div>
+          <div class="brand-text">
+            <div class="brand-name">TimePact</div>
+            <div class="brand-tagline">Make focus a promise, not a wish.</div>
+          </div>
+        </div>
+        <nav class="nav-tabs" aria-label="Main navigation">
+          <button class="nav-tab active" data-target="home">Home</button>
+          <button class="nav-tab" data-target="inquiry">Inquiry</button>
+          <button class="nav-tab" data-target="team">Meet the Team</button>
+          <button class="nav-tab" data-target="about">About</button>
+          <button class="nav-tab" data-target="schedule">Schedule</button>
+        </nav>
+      </header>
+
+      <main class="main">
+        <!-- HOME -->
+        <section id="home" class="view view--active" aria-labelledby="home-heading">
+          <div class="hero">
+            <div class="hero-text">
+              <h1 id="home-heading">Turn your time into a pact.</h1>
+              <p class="hero-lead">
+                Choose the <strong>only 3 apps</strong> you’re allowed to use,
+                set a timer, and let TimePact block everything else. Stay honest
+                with lightweight check‑ins and reflective worklogs.
+              </p>
+              <div class="hero-actions">
+                <button class="btn btn-primary" data-goto="schedule">
+                  Create a TimePact
+                </button>
+                <button class="btn btn-ghost" data-goto="about">
+                  Learn how it works
+                </button>
+              </div>
+              <dl class="hero-metrics" aria-label="Example productivity stats">
+                <div class="metric">
+                  <dt>4h 20m</dt>
+                  <dd>Average focused time / day</dd>
+                </div>
+                <div class="metric">
+                  <dt>3 apps</dt>
+                  <dd>Maximum allowed per pact</dd>
+                </div>
+                <div class="metric">
+                  <dt>2x</dt>
+                  <dd>Reported productivity uplift</dd>
+                </div>
+              </dl>
+            </div>
+            <aside class="hero-panel" aria-label="TimePact preview mockup">
+              <div class="panel-header">
+                <span class="pill pill-live">Pact preview</span>
+                <span class="panel-title">Deep Work · 90 min</span>
+              </div>
+              <div class="panel-section">
+                <h2 class="panel-section-title">Allowed apps</h2>
+                <ul class="app-list">
+                  <li>Notion</li>
+                  <li>VS Code</li>
+                  <li>Chrome – Research only</li>
+                </ul>
+              </div>
+              <div class="panel-section">
+                <h2 class="panel-section-title">Honor check‑ins</h2>
+                <ol class="checkin-list">
+                  <li>“Have you stayed within your 3 apps?”</li>
+                  <li>“Are you working on the task you promised?”</li>
+                  <li>“What tried to steal your attention?”</li>
+                </ol>
+              </div>
+              <div class="panel-section panel-stats">
+                <div>
+                  <div class="stat-label">Today’s focus score</div>
+                  <div class="stat-value">82<span class="stat-unit">/100</span></div>
+                </div>
+                <div>
+                  <div class="stat-label">Sessions this week</div>
+                  <div class="stat-value">7</div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- INQUIRY -->
+        <section id="inquiry" class="view" aria-labelledby="inquiry-heading">
+          <div class="content-grid">
+            <div>
+              <h1 id="inquiry-heading">Tell us how you’d use TimePact.</h1>
+              <p class="section-lead">
+                This is a lightweight placeholder for a future feedback and
+                research portal. For now, imagine we’re collecting stories about
+                how you struggle with focus today.
+              </p>
+              <ul class="bullet-list">
+                <li>Students trying to survive “just one more tab”.</li>
+                <li>Professionals juggling Slack, email, and deep work.</li>
+                <li>Founders fighting endless context switching.</li>
+                <li>Anyone with ADHD who wants structure without shame.</li>
+              </ul>
+            </div>
+            <form class="card form" id="inquiry-form" novalidate>
+              <h2 class="form-title">Share your attention story</h2>
+              <label class="field">
+                <span class="field-label">Name (optional)</span>
+                <input type="text" name="name" placeholder="How should we call you?" />
+              </label>
+              <label class="field">
+                <span class="field-label">Email (optional)</span>
+                <input type="email" name="email" placeholder="we@timepact.app" />
+              </label>
+              <label class="field">
+                <span class="field-label">Biggest distraction right now</span>
+                <input
+                  type="text"
+                  name="distraction"
+                  placeholder="Endless scrolling, group chats, AI rabbit holes…"
+                  required
+                />
+              </label>
+              <label class="field">
+                <span class="field-label">How could TimePact help?</span>
+                <textarea
+                  name="story"
+                  rows="4"
+                  placeholder="Share a quick scenario or wish-list. This is just a mockup for now."
+                ></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary btn-block">
+                Send (demo only)
+              </button>
+              <p class="form-footnote">
+                This form doesn’t actually send anything yet – it’s a safe space
+                for you to imagine what TimePact should become.
+              </p>
+              <p id="inquiry-status" class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+
+        <!-- MEET THE TEAM -->
+        <section id="team" class="view" aria-labelledby="team-heading">
+          <div class="content-narrow">
+            <h1 id="team-heading">Meet the humans behind TimePact.</h1>
+            <p class="section-lead">
+              TimePact started as a conversation between two people who were
+              tired of losing to their own browser. We’ll add full bios, links,
+              and photos later – for now, here’s the core duo.
+            </p>
+            <div class="team-grid">
+              <article class="card team-card">
+                <h2 class="team-name">Bener Dulger</h2>
+                <p class="team-role">Co‑founder · Systems & Experience</p>
+                <p class="team-bio">
+                  Obsessive about turning chaotic to‑do lists into clear
+                  systems. Bener is focused on the TimePact experience – how it
+                  feels to commit to a block of time and actually honor it.
+                </p>
+                <ul class="tag-list">
+                  <li>Focus rituals</li>
+                  <li>Product thinking</li>
+                  <li>ADHD‑friendly design</li>
+                </ul>
+              </article>
+              <article class="card team-card">
+                <h2 class="team-name">Shivam Patel</h2>
+                <p class="team-role">Co‑founder · Product & Insight</p>
+                <p class="team-bio">
+                  Driven by the question: “What does meaningful work look like
+                  in the age of AI?” Shivam is shaping the TimePact honor code,
+                  check‑ins, and the narrative around beating distraction.
+                </p>
+                <ul class="tag-list">
+                  <li>Behavioral insights</li>
+                  <li>Storytelling</li>
+                  <li>Data‑driven reflection</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="view" aria-labelledby="about-heading">
+          <div class="content-grid">
+            <div>
+              <h1 id="about-heading">A tiny operating system for your attention.</h1>
+              <p class="section-lead">
+                TimePact is built around a simple constraint: during a pact, you
+                may only use <strong>three apps or websites</strong>. Everything
+                else becomes friction. That constraint becomes a promise – with
+                yourself.
+              </p>
+              <ol class="steps">
+                <li>
+                  <strong>Pick your 3 apps.</strong> The ones that genuinely
+                  move your work forward.
+                </li>
+                <li>
+                  <strong>Set a duration.</strong> 25 minutes, 90 minutes, or a
+                  custom block – whatever fits your brain.
+                </li>
+                <li>
+                  <strong>Honor the pact.</strong> Light‑touch check‑ins,
+                  self‑evaluation, and a worklog so you can see what actually
+                  happened.
+                </li>
+                <li>
+                  <strong>Review the data.</strong> Over time, TimePact will
+                  surface patterns in your focus, energy, and distraction
+                  triggers.
+                </li>
+              </ol>
+            </div>
+            <aside class="card card-muted">
+              <h2>Built for the battle against drift.</h2>
+              <p>
+                We’re designing this for people who feel constantly pulled away
+                – whether by AI tools, social feeds, or just too many open
+                tabs. The goal is not guilt; it’s gentle accountability.
+              </p>
+              <ul class="bullet-list">
+                <li>Friendly to ADHD and attention challenges.</li>
+                <li>Respects that you’ll sometimes break the rules – and asks why.</li>
+                <li>Optimized for clarity over complexity.</li>
+              </ul>
+              <p class="callout">
+                This page is intentionally broad. As TimePact evolves, this will
+                become a living spec and manifesto.
+              </p>
+            </aside>
+          </div>
+        </section>
+
+        <!-- SCHEDULE -->
+        <section id="schedule" class="view" aria-labelledby="schedule-heading">
+          <div class="content-grid">
+            <div>
+              <h1 id="schedule-heading">Schedule your next TimePact.</h1>
+              <p class="section-lead">
+                This is a front‑end preview of how scheduling might feel.
+                Nothing is enforced yet – it’s a sandbox for designing the
+                interaction.
+              </p>
+              <form id="schedule-form" class="card form">
+                <h2 class="form-title">New Focus Session</h2>
+
+                <label class="field">
+                  <span class="field-label">Session name</span>
+                  <input
+                    type="text"
+                    name="sessionName"
+                    placeholder="Deep work – thesis, sprint planning, etc."
+                    required
+                  />
+                </label>
+
+                <fieldset class="field">
+                  <legend class="field-label">
+                    Pick up to 3 allowed apps/websites
+                  </legend>
+                  <div class="chip-row" id="app-choices">
+                    <button type="button" class="chip" data-app="Notion">Notion</button>
+                    <button type="button" class="chip" data-app="VS Code">VS Code</button>
+                    <button type="button" class="chip" data-app="Chrome – Docs">
+                      Chrome – Docs
+                    </button>
+                    <button type="button" class="chip" data-app="Figma">Figma</button>
+                    <button type="button" class="chip" data-app="Terminal">Terminal</button>
+                    <button type="button" class="chip" data-app="Other…">Other…</button>
+                  </div>
+                  <p class="field-help">
+                    This is purely visual for now – in the real app, we’d
+                    integrate with system‑level blocking.
+                  </p>
+                </fieldset>
+
+                <label class="field">
+                  <span class="field-label">
+                    Duration: <span id="duration-label">60 minutes</span>
+                  </span>
+                  <input
+                    type="range"
+                    name="duration"
+                    id="duration-input"
+                    min="15"
+                    max="180"
+                    step="15"
+                    value="60"
+                  />
+                </label>
+
+                <label class="field">
+                  <span class="field-label">Start time</span>
+                  <input type="datetime-local" name="startTime" />
+                </label>
+
+                <label class="field">
+                  <span class="field-label">Honor code</span>
+                  <textarea
+                    name="honor"
+                    rows="3"
+                    placeholder="Describe what you’re promising yourself during this TimePact."
+                  ></textarea>
+                </label>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                  Create demo pact
+                </button>
+                <p id="schedule-status" class="form-status" aria-live="polite"></p>
+              </form>
+            </div>
+
+            <aside class="card schedule-summary" aria-label="Sample analytics">
+              <h2>Sample focus insights</h2>
+              <p class="section-lead">
+                When TimePact is fully wired up, this area will summarize how
+                your sessions are going over time.
+              </p>
+
+              <div class="summary-stat-row">
+                <div>
+                  <div class="stat-label">Weekly focused hours</div>
+                  <div class="stat-value">
+                    <span id="stat-hours">9.5</span>
+                    <span class="stat-unit">hrs</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="stat-label">Average honor score</div>
+                  <div class="stat-value">
+                    <span id="stat-honor">78</span>
+                    <span class="stat-unit">/100</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mini-chart" aria-label="Fake weekly chart">
+                <div class="mini-chart-bars" id="mini-chart-bars">
+                  <!-- bars injected by JS -->
+                </div>
+                <div class="mini-chart-legend">
+                  <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span
+                  ><span>Fri</span><span>Sat</span><span>Sun</span>
+                </div>
+              </div>
+
+              <p class="callout">
+                All numbers here are placeholders. We’ll connect this to real
+                TimePact session data and honor‑code reflections later.
+              </p>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>TimePact – concept by Bener Dulger &amp; Shivam Patel.</div>
+        <div class="footer-links">
+          <button class="linkish" data-goto="inquiry">Share feedback</button>
+          <button class="linkish" data-goto="schedule">Plan a pact</button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
