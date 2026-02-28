@@ -1,4 +1,3 @@
-Founders: Bener Dulger & Shivam Patel
 
 TimePact is designed to be an app to boost user efficiency and productivity. By allowing the user to select x 
 amount of apps, the user will be put into a pact such that those are the only apps they can open for x amount
