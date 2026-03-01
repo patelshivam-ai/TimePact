@@ -7,4 +7,4 @@ checks and intermittent worklogs within the duration that TimePact is active. In
 it will store and record data to provide the user with information on their productivity and efficiency. 
 
 Currently, TimePact is in its prototyping and development stage such that we hope to deploy our first full 
-official version into the real world on March 1st: 3/1/2026. 
+official version into the real world on April 5th: 4/5/2026. 
